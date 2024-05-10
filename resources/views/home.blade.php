@@ -2,7 +2,7 @@
     <h1 class = "text-3xl mt-12 mb-4">Hello, my name is <div class = "text-amber-500 inline-block">Mihir Trivedi</div>.</h1>
     I'm a Junior majoring in Computer Sciences at the University of Wisconsin - Madison.<br>
     Click the button below to view a PDF version of my resume:
-    <form action = "./resources/files/Mihir_Trivedi_Resume.pdf" target="_blank">
+    <form action = "files/Mihir_Trivedi_Resume.pdf" target="_blank">
         <button class = "bg-amber-500 text-neutral-900 py-3 px-4 rounded-2xl my-8">View Resume PDF</button>
     </form>
     Alternatively, scroll down to read a more detailed description of my experiences, projects, skills, and more:
