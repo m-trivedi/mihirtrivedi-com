@@ -7,6 +7,7 @@
         <meta name = "keywords" content = "Mihir, Trivedi, Portfolio, m-trivedi, Mihir Trivedi, UW-Madison, Pantry2Home">
         <meta name = "author" content = "Mihir Trivedi">
         <meta name = "viewport" content = "width=device-width, initial-scale=1">
+        <link rel = "stylesheet" href = "build/assets/app-DXBrKJxR.css">
     </head>
     <body class = "bg-neutral-900 text-white flex flex-col min-h-screen">
         <header class = "fixed h-16 bg-neutral-800 w-full flex justify-center items-center space-x-8 border-b border-neutral-600">
