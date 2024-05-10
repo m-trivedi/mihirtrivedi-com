@@ -17,8 +17,3 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
-
-# Added for development ---
-composer.lock
-composer.json
-package.json
