@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+
+{% block title %} Mihir Trivedi {% endblock %}
+{% block content %}
+    <h1 class="text-3xl mt-12 mb-4">Hello, my name is <div class = "text-amber-500 inline-block">Mihir Trivedi</div>.</h1>
+    I'm a Senior majoring in Computer Sciences at the University of Wisconsin - Madison. I am actively looking for full-time software engineering roles that begin in May, 2025.<br>
+    Click the button below to view a PDF version of my resume:
+    <form action="static/files/Mihir_Trivedi_Resume.pdf" target="_blank">
+        <button class="bg-amber-500 text-neutral-900 py-3 px-4 rounded-2xl my-8">View Resume PDF</button>
+    </form>
+    Alternatively, scroll down to read a more detailed description of my experiences, projects, skills, and more:
+    <br><br>
+
+    <h1 class="text-3xl text-amber-500">Testimonials</h1>
+    <div class="my-4">
+        <img class="rounded-full h-12 w-12 float-left mr-4" src="static/images/img1.jpeg" alt="Julie Eichhorn">
+        Julie Eichhorn<br>Co-Founder at Pantry2Home
+    </div>
+    "Mihir has been integral to the development of our platform at Pantry2Home.com. Our website connects food insecure individuals to food pantries for online ordering. Mihir worked to transform our wireframes into a functioning front and backend product that opperates efficiently for individuals in need and is a daily time saver for the food pantry. His organization, willingness to learn new programs and work as a team player are a true gift in today's job market. I can say without hesitation, without Mihir, our company would not be running. Julie Eichhorn co-founder Pantry2Home.com"
+    <br>
+    <div class="mt-6 mb-4">
+        <img class="rounded-full h-12 w-12 float-left mr-4" src="static/images/img2.jpeg" alt="Laura Mendyk">
+        Laura Mendyk<br>Co-Founder at Pantry2Home
+    </div>
+    "Mihir is wise and professional beyond his years. He developed the platform for our company, Pantry2Home. We initially hired him to create a web page and after meeting with him realized that he was capable of building the entire platform. He is fluent in many scripts and open to learning new ones, which he did of his own accord to make our platform better. He is prepared and organized for all our meetings and has an incredible vision for what can be done to make it better. More importantly, he is able to verbalize complex coding and IT processes to my partner and I who have zero IT background. His grasp of the work and love of the process is energizing. 
+    I have hired many physicians in one of my previous roles. Interviewing is hard and finding the right person for the job is sometimes even harder. Mihir is that diamond in the rough. I would hire Mihir again in a heart beat and whomever does is a lucky person."
+    
+    <!-- Experience -->
+    <h1 class="text-3xl text-amber-500 mt-8">Experience</h1>
+    <div class="mt-6 mb-4">
+        <img class="rounded-full h-12 w-12 float-left mr-4" src="static/images/singlewire.png" alt="Singlewire">
+        Software Engineer Intern<br>Singlewire Software
+    </div>
+    <ul class="list-disc">
+        <li>Developed a chrome extension using JavaScript (Vue) that prints visitor badges automatically by binding to public channels 
+        and listening to broadcasted visitor check-in events based on a selected location. Set up auth flow via API calls to web server.</li>
+        <li>Refactored large data tables to display information and actions regarding visitors, students, emergencies, locations, and
+        activity logs in Laravel in real time using advanced eloquent ORM queries. Improved filtering, sorting, pagination performance.</li>
+        <li>Enhanced import/export functionalities and permission-based CRUD operations using RESTful APIs.</li>
+        <li>Worked closely with the CTO, PMs, software engineers, QA and Support to plan and implement features in bi-weekly sprints.</li>
+    </ul>
+    <div class="mt-6 mb-4">
+        <img class="rounded-full h-12 w-12 float-left mr-4" src="static/images/pantry2home.jpeg" alt="Pantry2Home">
+        Full-Stack Developer (Part Time)<br>Pantry2Home<br>
+    </div>
+    <ul class="list-disc">
+        <li>Developed <a class="underline underline-offset-4 hover:text-amber-500" href="https://pantry2home.com">pantry2home.com</a>, a server-side web application independently to support over 2,500 food-insecure families in 
+        placing over 5,000 pickup/delivery orders containing over 100,000 food items from different food pantries in Wisconsin.</li>
+        <li>Engineered an object-oriented PHP backend integrated with an SQL database, and HTML/CSS frontend, incorporating the MVC 
+        design pattern, to implement functionalities such as user account management, order processing & tracking, and pantry 
+        inventory management encompassing diverse food categories. Utilized Git for version control.</li>
+        <li>Collaborated closely with co-founders, pantry managers to brainstorm and conceptualize innovative website features.</li>
+    </ul>
+
+    <!-- Projects -->
+    <h1 class="text-3xl text-amber-500 mt-8">Projects</h1>
+    <h2 class="text-xl mt-4 mb-2">Capital One Event-Driven Fraud Detection System</h2>
+    <ul class="list-disc">
+        <li>Designed and implemented a fraud detection system on AWS, utilizing SQS to queue credit card transactions, Lambda
+        functions to apply isolation-forest models stored in S3 for fraud detection, and SNS to notify users of results via email.</li>
+        <li>Utilizing DynamoDB to read/write new transactions, allowing users to confirm or deny fraudulent activity through a React UI,
+        and re-training models on the new labelled transaction data for improving overall fraud detection accuracy.</li>
+        <li>Working under guidance of Capital One software engineers as part of the UW-Madison computer science capstone project
+    </ul>
+    <h2 class="text-xl mt-6 mb-2">Wealth Roadmap iOS Application</h2>
+    <ul class="list-disc">
+        <li>Developing an iOS application in Swift using the MVVM design pattern to provide a comprehensive set of financial tools that
+        help users plan and grow their wealth by analyzing income, expenses, assets and liabilities for accurate financial projections.</li>
+        <li>Integrating RESTful AWS API to trigger Lambda functions, enabling efficient serverless read/write operations in DynamoDB,
+        optimizing data management, ensuring scalability and enhancing reliability of the application.</li>
+    </ul>
+    <h2 class="text-xl mt-6 mb-2">Advertisement Click-Through Rate Prediction Model</h2>
+    <ul class="list-disc">
+        <li>Developed a model in Python that predicts with over 90% accuracy if a user would click on an advertisement by considering
+        different features across multiple datasets. Utilized techniques such as logistic regression, scaling, and one-hot encoding.</li>
+    </ul>
+    <h2 class="text-xl mt-6 mb-2">Remote Procedural Call System (<a class="underline underline-offset-4 hover:text-amber-500" href="https://github.com/m-trivedi/remote-procedural-calls" target="_blank">link</a>)</h2>
+    <ul class="list-disc">
+        <li>Developed a remote procedural call system in C, facilitating the tracking of 100+ connected clients by a remote server.</li>
+        <li>Employed multi-threading to enable concurrent servicing of multiple client requests, enhancing system efficiency by 400%.</li>
+    </ul>
+    <h1 class="text-3xl text-amber-500 mt-8 mb-4">Technical Skills</h1>
+    <ul class="list-disc">
+        <li>Languages: Python, PHP, Java, JavaScript, Swift, C, C++, Go, R, SQL</li>
+        <li>Technologies: : Git, Docker, AWS (EC2, Lambda, SQS, SNS, DynamoDB), GCP, MySQL, Spark, Kafka, Cassandra, BigQuery, Jira</li>
+        <li>Libraries/Frameworks: Laravel, React, Vue, Tailwind, SwiftUI, SwiftData, Flask, Scikit-Learn, Pytorch, Pandas, PyQt5, JUnit</li>
+        <li>Coursework: Data Structures & Algorithms, Big Data Systems, Artificial Intelligence, Database Management, Operating Systems.</li>
+    </ul>
+    <h1 class="text-3xl text-amber-500 mt-8 mb-4">Leadership / Extracurricular</h1>
+    <ul class="list-disc">
+        <li>Participated in the Google Solutions Challenge (2022) to develop a progressive web app using React and Firebase in a team of four people to help reduce food wastage in developed countries. (<a class="underline underline-offset-4 hover:text-amber-500" href="https://github.com/MichaelLin12/Google-Solutions" target="_blank">link</a>)</li>
+        <li>Developed and taught a technical skills program at Porchlight's homeless shelter funded by the Dream Big Award from WSB.</li>
+        <li>Taught computer science skills at Thoreau Elementary under Prof. Andrea Arpaci-Dusseau. (<a class="underline underline-offset-4 hover:text-amber-500" href="https://docs.google.com/document/d/18DOjomzO1_HNdHbRMSEz7vhNRvYioYXKK9wKA1UIWdc/edit?usp=sharing" target="_blank">link</a>)</li>
+    </ul>
+    <h1 class="text-3xl text-amber-500 mt-8 mb-4">Awards</h1>
+    <ul class="list-disc">
+        <li>Dean's List Award (x3) - Issued by the College of Letters & Sciences, UW-Madison.</li>
+        <li>Dream Big Award 2022 - Issued by the Wisconsin School of Business, UW-Madison.</li>
+    </ul>
+{% endblock %}
